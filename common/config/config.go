@@ -7,6 +7,7 @@ type Config struct {
 }
 
 type Server struct {
-	Port    int           `fig:"port" default:"8000"`
-	Timeout time.Duration `fig:"timeout" default:"15s"`
+	Port      int           `fig:"port" default:"8000"`
+	Timeout   time.Duration `fig:"timeout" default:"15s"`
+	SecretKey string        `fig:"secretkey" validate:"required"`
 }

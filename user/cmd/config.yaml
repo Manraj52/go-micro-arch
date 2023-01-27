@@ -1,0 +1,4 @@
+server:
+  port: 8001
+  timeout: 15s
+  secretkey: BpLnfgDsc2WD8F2qNfHK5a84jjJkwzDk
