@@ -32,7 +32,7 @@ func main() {
 
 	//	configuration
 	if err := fig.Load(&cfg); err != nil {
-		panic("failed to load config")
+		log.Fatal(err)
 	}
 
 	//	logger
@@ -60,7 +60,7 @@ func main() {
 	authMiddleware := middlewares.NewAuthMiddleware(authHelper)
 
 	//	gRPC client
-	userConn, err := grpc.Dial("192.168.1.42:8001", serverOptions...)
+	userConn, err := grpc.Dial("user-svc:8001", serverOptions...)
 	if err != nil {
 		panic(err)
 	}

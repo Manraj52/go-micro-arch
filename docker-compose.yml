@@ -1,0 +1,17 @@
+version: '3.9'
+
+services:
+  gateway-svc:
+    build:
+      context: ./gateway
+      dockerfile: Dockerfile
+    links: 
+    - user-svc
+    ports:
+    - 8000:8000
+  user-svc:
+    build:
+      context: ./user
+      dockerfile: Dockerfile
+    ports: 
+      - 8001:8001
