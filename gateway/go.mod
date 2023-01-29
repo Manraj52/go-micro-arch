@@ -5,9 +5,19 @@ go 1.19
 require github.com/gin-gonic/gin v1.8.2
 
 require (
+	github.com/aead/chacha20 v0.0.0-20180709150244-8b13a72661da // indirect
+	github.com/aead/chacha20poly1305 v0.0.0-20201124145622-1a5aba2a8b29 // indirect
+	github.com/aead/poly1305 v0.0.0-20180717145839-3fee0db0b635 // indirect
+	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/mitchellh/mapstructure v1.4.1 // indirect
+	github.com/o1egl/paseto v1.0.0 // indirect
 	github.com/pelletier/go-toml v1.9.3 // indirect
+	github.com/pkg/errors v0.8.0 // indirect
+	github.com/salman-pathan/go-micro-arch/common v0.0.0-20230127173936-b3c9c6c911c1 // indirect
+	github.com/salman-pathan/go-micro-arch/user v0.0.0-20230129210655-6094adb49328 // indirect
 	github.com/sirupsen/logrus v1.9.0 // indirect
+	google.golang.org/genproto v0.0.0-20221118155620-16455021b5e6 // indirect
+	google.golang.org/grpc v1.52.3 // indirect
 )
 
 require (
