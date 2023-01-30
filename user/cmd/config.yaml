@@ -1,4 +1,12 @@
+location: "Asia/Kolkata"
 server:
   port: 8001
   timeout: 15s
   secretkey: BpLnfgDsc2WD8F2qNfHK5a84jjJkwzDk
+mongo:
+  host: mongo
+  port: 27017
+  username: mongo
+  password: mongo
+  timeout: 10s
+  database: MicroArch

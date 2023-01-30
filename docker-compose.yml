@@ -7,6 +7,7 @@ services:
       dockerfile: Dockerfile
     links: 
     - user-svc
+    - mongo
     ports:
     - 8000:8000
   user-svc:
@@ -15,3 +16,15 @@ services:
       dockerfile: Dockerfile
     ports: 
       - 8001:8001
+  mongo:
+    image: mongo:4.2
+    environment:
+      MONGO_INITDB_DATABASE: MicroArch 
+      MONGO_INITDB_ROOT_USERNAME: mongo
+      MONGO_INITDB_ROOT_PASSWORD: mongo
+    ports:
+      - 27017:27017
+    volumes:
+      - mongodb_data_container:/data/db
+volumes:
+  mongodb_data_container:
