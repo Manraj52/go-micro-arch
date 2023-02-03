@@ -33,6 +33,7 @@ func NewService(
 	}
 }
 
+// Signup adds user to the system
 func (s *service) Signup(ctx context.Context, request *user.SignupRequest) (*user.SignupResponse, error) {
 	userModel := model.NewUser(request.FirstName, request.LastName, request.Email, request.Password, time.Now().In(s.location))
 	id, err := s.userRepo.AddUser(ctx, userModel)
